@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Comic;
 
 class ComicController extends Controller
 {
@@ -13,7 +14,14 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        $comics = comic::all();
+        
+        // recupero array icone
+        $icone = config('IconSocial.icone');
+        // recupero array social
+        $social = config('IconSocial.social');
+
+        return view('home', compact('comics'));
     }
 
     /**
