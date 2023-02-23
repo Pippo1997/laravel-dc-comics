@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\ComicsController as ComicsController;
+use App\Http\Controllers\PagesController as PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,3 +13,5 @@ use App\Http\Controllers\ComicsController as ComicsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/', [PagesController::class, 'index'])->name('homepage');

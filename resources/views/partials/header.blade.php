@@ -9,34 +9,34 @@
         <nav>
             <ul class="d-flex">
                 <li class="active {{ Route::currentRouteName() == 'characters' ? 'active' : ''}}">
-                    <a href="{{ route('Home')}}">Characters</a>
+                    <a href="{{ route('homepage')}}">Characters</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'Comics' ? 'active' : ''}}">
-                    <a href="{{ route('Home')}}">Comics</a>
+                    <a href="{{ route('homepage')}}">Comics</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'Movie' ? 'active' : ''}}">
-                    <a href="{{ route('Home')}}">Movie</a>
+                    <a href="{{ route('homepage')}}">Movie</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'TV' ? 'active' : ''}}">
-                    <a href="{{ route('Home')}}">TV</a>
+                    <a href="{{ route('homepage')}}">TV</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'Games' ? 'active' : ''}}">
-                    <a href="{{ route('Home')}}">Games</a>
+                    <a href="{{ route('homepage')}}">Games</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'Collectibles' ? 'active' : ''}}">
-                    <a href="{{ route('Home')}}">Collectibles</a>
+                    <a href="{{ route('homepage')}}">Collectibles</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'Video' ? 'active' : ''}}">
-                    <a href="{{ route('Home')}}">Video</a>
+                    <a href="{{ route('homepage')}}">Video</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'Fans' ? 'active' : ''}}">
-                    <a href="{{ route('Home')}}">Fans</a>
+                    <a href="{{ route('homepage')}}">Fans</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'News' ? 'active' : ''}}">
-                    <a href="{{ route('Home')}}">News</a>
+                    <a href="{{ route('homepage')}}">News</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'Shop' ? 'active' : ''}}">
-                    <a href="{{ route('Home')}}">Shop</a>
+                    <a href="{{ route('homepage')}}">Shop</a>
                 </li>
             </ul>
         </nav>
