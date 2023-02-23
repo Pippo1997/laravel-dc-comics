@@ -1,0 +1,316 @@
+@import '~bootstrap/scss/bootstrap';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+////////// HEADER //////////
+
+header{
+
+    .blue-section{
+        height: 20px;
+        background-color: rgba(2,130,249,255);
+    }
+
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    ul{
+        list-style: none;
+        margin-top: 1rem;
+        margin-bottom: -1px;
+    }
+    
+    li{
+        height: 100%;
+        padding: 1rem;
+        font-size: 16px;
+    }
+    
+    .active {
+        color: rgba(2,130,249,255);
+        border-bottom: 3px solid rgba(2,130,249,255);
+        padding-bottom: 2rem;
+    }
+
+    img{
+        width: 80%;
+    }
+
+    .img-comcic{
+        background-image: url('../images/jumbotron.jpg');
+        background-size: cover;
+        height: 350px;
+    }
+
+}
+
+
+////////// MAIN //////////
+
+main{
+
+    .upper-title {
+        position: relative;
+    
+        .title{
+          background-color: rgba(2,130,249,255);
+          width: 250px;
+          padding: 15px;
+          text-align: center;
+          color: white;
+          position: absolute;
+          top: -25px;
+          left: 100px;
+          font-weight: bold;
+        }
+    }
+    
+    .black {
+        background-color: rgba(28,28,28,255);
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .fumetto{
+        width: calc(15.5%);
+        text-align: center;
+        margin: 5px;
+        padding: 1rem;
+        color: white;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .button_load {
+        margin-bottom: 3em;
+        color: white;
+        padding: 1em 2em;
+        background-color: rgba(2,130,249,255);
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+}
+
+////////// FOOTER //////////
+
+footer{
+
+    .blue-section{
+        background-color: $primary;
+
+        .icon {
+            display: flex;
+            align-items: center;
+
+
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
+
+            .label{
+                color: white;
+            }
+        }
+
+    }
+
+    .main-section{
+        padding: 1em;
+        background-image: url('../images/footer-bg.jpg');
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+
+        .flex{
+            gap: 1rem;
+
+            .col{
+                margin: 0.5rem;
+
+                li {
+                    color: white;
+                    list-style-type: none;
+                }
+        
+                li a {
+                    color: gray;
+                    text-decoration: none;
+        
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .social-section{
+        background-color: rgba(48,48,48,255);
+    }
+
+    .row-social{
+        align-items: center;
+        padding: 2rem;
+
+        .btn {
+            background-color: rgba(48,48,48,255);
+            border: 3px solid $primary;
+            color: white;
+            font-weight: bold;
+            padding: 15px 20px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: flex;
+                gap: 1rem;
+            }
+
+            li {
+                display: flex;
+                color: white;
+                list-style-type: none;
+            }
+
+            .follow {
+                color: $primary;
+                padding-right: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+////////// CARD //////////
+
+.blue{
+    background-color: rgba(2,130,249,255);
+    height: 70px;
+}
+
+.card-jumbo {
+    padding-top: 3em;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    h4 {
+        text-transform: uppercase;
+    }
+
+    .position {
+        width: 80%;
+        margin: 0 auto;
+
+        .view {
+            border: 3px solid white;
+            position: absolute;
+            top: -365px;
+            left: 0;
+
+            div {
+                text-align: center;
+                color: white;
+            }
+
+            .fumetto {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(2,130,249,255);
+                text-transform: uppercase;
+            }
+
+            .gallery{
+                background-color: rgba(2,130,249,255);
+                text-transform: uppercase;
+            }
+
+        }
+
+    }
+
+    .title{
+       color: rgba(0,63,94,255);
+    }
+
+    .advertisement {
+        text-align: end;
+        color: rgba(48,48,48,255);
+
+        .adv{
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+.green {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+    .avaible {
+        display: flex;
+        justify-content: space-between;
+        border-right: 1px solid rgba(48,48,48,255);
+
+        .upbold {
+            color: white;
+        }
+    }
+
+    .avaible, .check-avaible {
+        padding: .8em;
+        background-color: rgba(85,186,89,255);
+        border-bottom: 1px solid rgba(48,48,48,255);
+    }
+}
+
+.section-talent-specs {
+    border-top: 1px solid gray;
+    background-color: rgba(246,246,246,255);
+    font-weight: bold;
+
+    a {
+        text-decoration: none;
+    }
+
+    .talent-and-specs {
+        padding-top: 3em;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            padding-bottom: .8em;
+        }
+
+        .h2, p {
+            color: rgba(48,48,48,255);
+            padding-bottom: .5em;
+            border-bottom: 1px solid rgba(48,48,48,255);
+        }
+    }
+}
