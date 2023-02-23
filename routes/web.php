@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController as PagesController;
+use App\Http\Controllers\ComicController as ComicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,5 @@ use App\Http\Controllers\PagesController as PagesController;
 */
 
 Route::get('/', [PagesController::class, 'index'])->name('homepage');
+
+Route::resource('comics', [ComicController::class]);

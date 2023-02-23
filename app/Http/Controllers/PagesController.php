@@ -8,13 +8,11 @@ class PagesController extends Controller
 {
     public function index(){
         
-            // recupero array fumetti
-            $fumetti = config('comics.fumetti');
             // recupero array icone
-            $icone = config('comics.icone');
+            $icone = config('IconSocial.icone');
             // recupero array social
-            $social = config('comics.social');
+            $social = config('IconSocial.social');
 
-        return view('homepage', compact('fumetti','icone','social'));
+        return view('homepage', compact('icone','social'));
     }
 }
