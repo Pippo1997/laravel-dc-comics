@@ -8,35 +8,17 @@
         </a>
         <nav>
             <ul class="d-flex">
-                <li class="active {{ Route::currentRouteName() == 'characters' ? 'active' : ''}}">
-                    <a href="{{ route('homepage')}}">Characters</a>
+                <li class="active {{ Route::currentRouteName() == 'homepage' ? 'active' : ''}}">
+                    <a href="{{ route('homepage')}}">Homepage</a>
                 </li>
-                <li class="active {{ Route::currentRouteName() == 'Comics' ? 'active' : ''}}">
-                    <a href="{{ route('homepage')}}">Comics</a>
+                <li class="active {{ Route::currentRouteName() == 'comics.index' ? 'active' : ''}}">
+                    <a href="{{ route('comics.index')}}">comics.index</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'Movie' ? 'active' : ''}}">
                     <a href="{{ route('homepage')}}">Movie</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'TV' ? 'active' : ''}}">
                     <a href="{{ route('homepage')}}">TV</a>
-                </li>
-                <li class="active {{ Route::currentRouteName() == 'Games' ? 'active' : ''}}">
-                    <a href="{{ route('homepage')}}">Games</a>
-                </li>
-                <li class="active {{ Route::currentRouteName() == 'Collectibles' ? 'active' : ''}}">
-                    <a href="{{ route('homepage')}}">Collectibles</a>
-                </li>
-                <li class="active {{ Route::currentRouteName() == 'Video' ? 'active' : ''}}">
-                    <a href="{{ route('homepage')}}">Video</a>
-                </li>
-                <li class="active {{ Route::currentRouteName() == 'Fans' ? 'active' : ''}}">
-                    <a href="{{ route('homepage')}}">Fans</a>
-                </li>
-                <li class="active {{ Route::currentRouteName() == 'News' ? 'active' : ''}}">
-                    <a href="{{ route('homepage')}}">News</a>
-                </li>
-                <li class="active {{ Route::currentRouteName() == 'Shop' ? 'active' : ''}}">
-                    <a href="{{ route('homepage')}}">Shop</a>
                 </li>
             </ul>
         </nav>

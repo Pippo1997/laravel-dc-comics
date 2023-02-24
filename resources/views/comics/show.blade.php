@@ -42,8 +42,8 @@
         <div class="talent-and-specs">
             <div class="talent col-5">
                 <h2>Talent</h2>
-                <p>Art by: <a href="/"> {{ implode(', ', $single['artists']) }} </a></p>
-                <p>Written by: <a href="/"> {{ implode(', ', $single['writers']) }} </a></p>
+                <p>Art by: <a href="/"> ... </a></p>
+                <p>Written by: <a href="/"> ... </a></p>
             </div>
             <div class="specs col-5">
                 <h2>Specs</h2>

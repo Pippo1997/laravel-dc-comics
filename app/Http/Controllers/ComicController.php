@@ -14,14 +14,14 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $comics = comic::all();
+        $comics = Comic::all();
         
         // recupero array icone
         $icone = config('IconSocial.icone');
         // recupero array social
         $social = config('IconSocial.social');
 
-        return view('home', compact('comics'));
+        return view('comics.index', compact('comics', 'icone', 'social'));
     }
 
     /**
@@ -53,7 +53,20 @@ class ComicController extends Controller
      */
     public function show($id)
     {
-        //
+        $comics = Comic::find($id);
+        if($comics){
+            $single=[
+                'single'=> $comics
+            ];
+        }
+
+        // recupero array icone
+        $icone = config('IconSocial.icone');
+        // recupero array social
+        $social = config('IconSocial.social');
+
+        return view('comics.show', $single, compact('icone', 'social'));
+        
     }
 
     /**

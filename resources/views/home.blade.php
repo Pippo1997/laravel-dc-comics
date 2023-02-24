@@ -14,19 +14,17 @@
   <div class="black">
     <div class="container">
       <div class="row">
-        
-          @foreach ($fumetti as $key => $fumettiItem)
-          <div class="fumetto">
-            {{-- link per accedere alla pagina card --}}
-            <a href="{{ route('card', ['id' => $key]) }}">
-              <div class="fumetto-img">
-                <img src="{{ $fumettiItem['thumb'] }}" alt="{{ $fumettiItem['title'] }}"> 
-              </div>
-              <h5>{{ $fumettiItem['title'] }}</h5>  
-            </a>
+        @foreach($comics as $fumettiItem)
+        <div class="fumetto">
+          {{-- link per accedere alla pagina card --}}
+          <a href="{{ route('comics.show', ['comic' => $fumettiItem['id']]) }}">
+            <div class="fumetto-img">
+              <img src="{{ $fumettiItem['thumb'] }}" alt="{{ $fumettiItem['title'] }}"> 
             </div>
-          @endforeach
-          
+            <h5>{{ $fumettiItem['title'] }}</h5>  
+          </a>
+        </div>
+        @endforeach
       </div>
       <div>
         <button class="button_load">LOAD MORE</button>

@@ -1,5 +1,11 @@
 @extends('layout')
 
 @section('content')
-<h2>ciaokjewvsnawf</h2>
+<div class="container-fluid bg_gray">
+    <section>
+        <div class="album">
+             @include('/home')
+        </div>
+    </section>
+</div>
 @endsection
