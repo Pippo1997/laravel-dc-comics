@@ -31,7 +31,12 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        // recupero array icone
+        $icone = config('IconSocial.icone');
+        // recupero array social
+        $social = config('IconSocial.social');
+
+        return view('comics.create', compact( 'icone', 'social'));
     }
 
     /**
@@ -42,7 +47,19 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $form = $request->all();
+        $newComic = new Comic();
+        $newComic->title = $form['title'];
+        $newComic->description = $form['description'];
+        $newComic->thumb = $form['thumb'];
+        $newComic->price = $form['price'];
+        $newComic->series = $form['series'];
+        $newComic->series = $form['sale_date'];
+        $newComic->series = $form['type'];
+        $newComic->fill($form);
+        $newComic->save();
+        
+        return redirect()->route('comics.show',['comic' => $newComic-> id]);
     }
 
     /**
@@ -66,7 +83,6 @@ class ComicController extends Controller
         $social = config('IconSocial.social');
 
         return view('comics.show', $single, compact('icone', 'social'));
-        
     }
 
     /**

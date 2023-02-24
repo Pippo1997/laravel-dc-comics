@@ -12,13 +12,10 @@
                     <a href="{{ route('homepage')}}">Homepage</a>
                 </li>
                 <li class="active {{ Route::currentRouteName() == 'comics.index' ? 'active' : ''}}">
-                    <a href="{{ route('comics.index')}}">comics.index</a>
+                    <a href="{{ route('comics.index')}}">Comics</a>
                 </li>
-                <li class="active {{ Route::currentRouteName() == 'Movie' ? 'active' : ''}}">
-                    <a href="{{ route('homepage')}}">Movie</a>
-                </li>
-                <li class="active {{ Route::currentRouteName() == 'TV' ? 'active' : ''}}">
-                    <a href="{{ route('homepage')}}">TV</a>
+                <li class="active {{ Route::currentRouteName() == 'comics.create' ? 'active' : ''}}">
+                    <a href="{{ route('comics.create')}}">Create your comic</a>
                 </li>
             </ul>
         </nav>
