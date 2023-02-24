@@ -49,13 +49,13 @@ class ComicController extends Controller
     {
         $form = $request->all();
         $newComic = new Comic();
-        $newComic->title = $form['title'];
-        $newComic->description = $form['description'];
-        $newComic->thumb = $form['thumb'];
-        $newComic->price = $form['price'];
-        $newComic->series = $form['series'];
-        $newComic->series = $form['sale_date'];
-        $newComic->series = $form['type'];
+        // $newComic->title = $form['title'];
+        // $newComic->description = $form['description'];
+        // $newComic->thumb = $form['thumb'];
+        // $newComic->price = $form['price'];
+        // $newComic->series = $form['series'];
+        // $newComic->series = $form['sale_date'];
+        // $newComic->series = $form['type'];
         $newComic->fill($form);
         $newComic->save();
         
@@ -116,6 +116,9 @@ class ComicController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $comic = Comic::findOrFail($id);
+        $comic->delete();
+
+        return redirect()->route('comics.index');
     }
 }
