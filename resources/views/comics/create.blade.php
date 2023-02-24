@@ -33,7 +33,7 @@
                     <label class="control-label py-2">Sale date</label>
                     <input type="date" class="form-control" name="sale_date" placeholder="Insert Sale date">
                 </div>
-                <div class="form-group mb-3">
+                <div class="form-group">
                     <button type="submit" class="button_load">SAVE</button>
                 </div>     
             </form>
