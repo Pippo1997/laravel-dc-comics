@@ -1,5 +1,7 @@
 @extends('layout')
 
 @section('content')
-<h1>ciao</h1>
+<div class="black">
+    <h1 class="text-light">WELCOME ON LARAVEL DC-COMICS</h1>
+</div>
 @endsection
